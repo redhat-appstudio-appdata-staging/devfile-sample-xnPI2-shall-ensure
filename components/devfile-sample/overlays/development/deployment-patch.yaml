@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/abhindas-tenant/devfile-sample/devfile-sample@sha256:26dde8ead409a81cb1311093f2205a9708d157925ddae357ee7a340ed59eff01
+        name: my-nodejs
+        resources: {}
+status: {}
